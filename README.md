@@ -38,4 +38,5 @@ This repo contains my learning journey through core and advanced CSS concepts. S
 
 1. **Clone this repo**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/tlbogia08/learning_CSS.git
+   ```
