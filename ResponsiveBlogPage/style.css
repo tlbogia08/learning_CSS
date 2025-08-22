@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main img{
+    margin: 20px;
+    width: 200px;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 70px;
+    font-family: "Playfair Display", serif;
+}
+
+span{
+    color: navy;
+    font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left-card img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-card{
+    width: 600px;
+    padding: 20px;
+}
+
+.right-card img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-card{
+    float: right;
+    width: 600px;
+    padding: 10px;
+    
+}
+
+.left-card p, .right-card p {
+    padding: 10px;
+    font-family: "Fira Code", monospace;
+}
+
+h3{
+    font-family: "Fira Code", monospace;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+
+footer{
+    clear: both;
+    text-align: right;
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    color: navy;
+    padding: 20px;
+    margin: 50px 50px 0 50px;
+}
+
+.left-card img:hover,
+.right-card img:hover {
+    transform: scale(1.08);  /* zoom in */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* adds depth */
+}
+
+@media (max-width: 800px) {
+    h1{
+         margin: 10px;
+        font-size: 50px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+.left-card img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 4px;
+    display: flex;
+}
+
+.left-card{
+    width:300px;
+}
+
+.right-card img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 4px;
+    display: flex;
+}
+
+.right-card{
+    float: right;
+    width: 300px;
+    padding: 10px;
+    
+}
+
+.left-card p, .right-card p {
+    padding: 5px;
+    font-family: "Fira Code", monospace;
+}
+
+h3{
+    font-family: "Fira Code", monospace;
+    margin: 4px;
+    font-weight: bolder;
+    font-family: "Fira Code", monospace;
+}
+
+footer{
+    margin:15px;
+    padding:5px;
+    clear: both;
+    text-align: right;
+    font-size: 15px;
+    font-family: "Fira Code", monospace;
+    color: navy;
+}
+}
