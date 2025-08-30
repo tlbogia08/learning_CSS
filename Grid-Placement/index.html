@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex&Grid</title>
+    <style>
+    .container{
+        height: 100vh;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container > *{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        font-size: 3rem;
+    }
+
+    .cowboy{
+        background-color: #00B9FF;
+        grid-column-start: 1;
+        grid-column-end: -2;
+
+    }
+    .astronaut{
+        background-color: seagreen;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .book{
+        background-color: #E58331;
+        grid-area: 1/3/3/4;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item cowboy">🤠</div>
+        <div class="item astronaut">👨‍🚀</div>
+        <div class="item book">📚</div>
+    </div>
+</body>
+</html>

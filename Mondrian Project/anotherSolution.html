@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Grid 2</title>
+  <style>
+    /* Colors */
+    :root {
+      --white: #F0F1EC;
+      --red: #E72F24;
+      --blue: #004592;
+      --yellow: #F9D01E;
+      --black: #232629;
+      --gap: 9px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 800px;
+      height: 800px;
+      display: grid;
+      background-color: #000;
+      gap: var(--gap);
+      grid-template-columns: 200px 300px 250px;
+      grid-template-rows: 300px 200px 180px 100px;
+    }
+
+    .item {
+      background-color: var(--white);
+    }
+
+    .red {
+      background-color: var(--red);
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .blue {
+      background-color: var(--blue);
+      grid-area: 1 / 2 / 2 / 4;
+      border-bottom: 10px solid black;
+    }
+
+    .white1 {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .white2 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .yellow {
+      background-color: var(--yellow);
+      grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .white3 {
+      grid-area: 3 / 2 / 5 / 3;
+    }
+
+    .black {
+      background-color: var(--black);
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .white4 {
+      grid-area: 4 / 3 / 5 / 4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item blue"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item yellow"></div>
+    <div class="item white3"></div>
+    <div class="item black"></div>
+    <div class="item white4"></div>
+  </div>
+</body>
+</html>
